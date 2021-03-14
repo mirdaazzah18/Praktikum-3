@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Program JavaScript</title>
+</head>
+<script language="JavaScript">
+	function test() {
+		//<!-- fungsi ini dijalankan ketika pengguna mengklik tombol button-->
+		val1=window.prompt("Input Nilai (1-5):")
+		//<!-- digunakan untuk penginputan nilai -->
+		switch (val1){
+			case "1" : //<!-- digunakan sebagai kondisi bilangan satu -->
+			document.write("bilangan satu") //<!-- tampilan output -->
+			break //<!-- untuk menghentikan proses perulangan
+			case "2" : //<!-- digunakan sebagai kondisi bilangan dua -->
+			document.write("bilangan dua") //<!-- tampilan output -->
+			break //<!-- untuk menghentikan proses perulangan
+			case "3" : //<!-- digunakan sebagai kondisi bilangan tiga-->
+			document.write("bilangan tiga") //<!-- tampilan output -->
+			break //<!-- untuk menghentikan proses perulangan
+			case "4" : //<!-- digunakan sebagai kondisi bilangan empat-->
+			document.write("bilangan empat") //<!-- tampilan output -->
+			break //<!-- untuk menghentikan proses perulangan
+			case "5" : //<!-- digunakan sebagai kondisi bilangan empat-->
+			document.write("bilangan lima") //<!-- tampilan output -->
+			break //<!-- untuk menghentikan proses perulangan
+			default : //<!-- digunakan sebagai kondisi bilangan lainnya (diatas angka 5) -->
+			document.write("bilangan lainnya") //<!-- tampilan output -->
+		}
+	}
+</script>
+<body>
+<input type="button" name="button1" value="switch" onclick=test()>
+<!--digunakan untuk tombol penginputan-->
+</body>
+</html>

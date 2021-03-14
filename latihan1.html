@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 1</title>
+</head>
+<script language="JavaScript">
+
+	//<!--untuk menampilkan hasil konversi nilai-->
+	function konversi() {
+		var x=document.form1.angka.value;
+		if(x<=40)
+			document.form1.huruf. value="E"
+		else if(x<=55)
+			document.form1.huruf. value="D"
+		else if(x<=60)
+			document.form1.huruf. value="C"
+		else if(x<=65)
+			document.form1.huruf. value="BC"
+		else if(x<=70)
+			document.form1.huruf. value="B"
+		else if(x<=80)
+			document.form1.huruf. value="AB"
+		else if(x<=100)
+			document.form1.huruf. value="A"
+		else
+			document.form1.huruf. value="Angka di luar range"
+	}
+</script>
+<body>
+	<!--untuk menampilkan tulisan dengan type heading 1-->
+	<h1>Konversi Nilai</h1><br>
+	<!--untuk menampung elemen yang berkaitan dengan form-->
+	<form method="POST" name="form1">
+		<!--untuk menampilkan tulisan dan text area untuk inputan-->
+		<p>Angka : <input type="text" name="angka"></p>
+		<!--untuk menampilkan button yang memanggil function konversi dan menghapus
+		text area-->
+		<input type="button" name="button1" value="Konversi!" onclick=konversi()>
+		<input type="reset" name="button2">
+		<!--text area untuk menampilkan hasil konversi-->
+		<p>Huruf : <input type="text" name="huruf"></p>
+	</form>
+</body>
+</html>

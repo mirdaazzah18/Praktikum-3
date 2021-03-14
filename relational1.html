@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Program JavaScript</title>
+</head>
+<script language="JavaScript">
+		function test() {
+			//<!-- fungsi ini dijalankan ketika pengguna mengklik tombol button-->
+			val1=window.prompt("Nilai I :")
+			//<!--untuk menginput bilangan 1-->
+			val2=window.prompt("Nilai II :")
+			//<!--untuk menginput bilangan 2-->
+			document.write("<br>"+"val1==val2"+"<br>")
+			//<!--untuk menampilkan output jika bil 1 sama dengan bil 2-->
+			document.write(val1==val2)
+			document.write("<br>"+"val1!=val2"+"<br>")
+			//<!--untuk menampilkan output jika bil 1 tidak sama dengan bil 2-->
+			document.write(val1!=val2)
+			document.write("<br>"+"val&gtval2"+"<br>")
+			//<!--untuk menampilkan output jika bil 1 lebih besar daripada bil 2-->
+			document.write(val1>val2)
+			document.write("<br>"+"val1&ltval2"+"<br>")
+			//<!--untuk menampilkan output jika bil 1 lebih kecil daripada bil 2-->
+			document.write(val1<val2)
+		}
+	</script>
+<body>
+	<input type="button" name="button1" value="relational" onclick=test()>
+	<!--berfungsi untuk penggunaan type button -->
+</body>
+</html>
